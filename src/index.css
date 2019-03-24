@@ -1,9 +1,8 @@
 
-html,
-body,
-div,
-h1,
-p {
+@import "../node_modules/typeface-droid-sans";
+@import "../node_modules/typeface-droid-serif";
+
+html,body,div,h1,p {
   background: transparent;
   border: 0;
   margin: 0;
@@ -25,10 +24,11 @@ p {
 
 body {
   color: #000;
-  font-family: Arial, sans-serif;
+  font-family: 'droid-sans', 'droid-serif';
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
+  background: #f7f7f7;
 }
 
 /* Headings */
@@ -182,7 +182,7 @@ footer {
   zoom: 1;
 }
 /* Apply clearfix in a few places */
-/* Apply dollar signs */
+/* Apply pound signs */
 .product .product-price:before,
 .product .product-line-price:before,
 .totals-value:before {
@@ -194,16 +194,18 @@ footer {
 }
 /* Column headers */
 .column-labels label {
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #a4a4a4;
+}
+.column-labels label:first-child {
+  padding-left: 2%; 
 }
 
 /* Product entries */
 .product {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+.product:nth-child(odd){
+  background: #dddddd;
 }
 
 .column-labels .product-removal {
@@ -212,6 +214,7 @@ footer {
 
 .product .product-details .product-title {
   margin-right: 20px;
+  padding-left: 2%;
 }
 
 .product .product-quantity input {
@@ -221,13 +224,10 @@ footer {
 .product .remove-product {
   border: 0;
   padding: 4px 8px;
-  background-color: #c66;
+  background-color:transparent;
   font-size: 12px;
   border-radius: 3px;
-}
-
-.product .remove-product:hover {
-  background-color: #a44;
+  color:#1d1d7a;
 }
 
 /* Totals section */
@@ -236,6 +236,7 @@ footer {
   clear: both;
   width: 100%;
   margin-bottom: 10px;
+  padding-left: 1%;
 }
 
 .totals .totals-item label {

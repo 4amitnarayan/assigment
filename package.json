@@ -25,6 +25,8 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "jquery": "^3.2.1",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "typeface-droid-sans": "0.0.44",
+    "typeface-droid-serif": "0.0.44"
   }
 }

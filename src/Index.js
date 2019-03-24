@@ -25,6 +25,7 @@ import './index.css'
    /* Calculate totals */
    var tax = subtotal * taxRate;
    var total = subtotal + tax ;
+   
    /* Update totals display */
    $('.totals-value').fadeOut(fadeTime, function () {
      $('#cart-subtotal').html(subtotal.toFixed(2));

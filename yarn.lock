@@ -4224,6 +4224,14 @@ type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
+typeface-droid-sans@0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/typeface-droid-sans/-/typeface-droid-sans-0.0.44.tgz#3af655833effc05b398cfa11b3ab06d6ead0dc67"
+
+typeface-droid-serif@0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/typeface-droid-serif/-/typeface-droid-serif-0.0.44.tgz#1e8aeb2e1c78e517cdeefa842378e184ebb81fa6"
+
 uglify-js@3.4.x:
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.10.tgz#9ad9563d8eb3acdfb8d38597d2af1d815f6a755f"
