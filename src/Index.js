@@ -67,3 +67,35 @@ import './index.css'
      recalculateCart();
    });
  }
+
+ /*On Submit - Buy Now get JSON */
+ function storeTblValues() {
+     var TableData = new Array();
+     $('.product').each(function(row){
+      TableData[row] =  {
+          "productTitle" : $('.product-title').text(),
+          "productPrice" : $('.product-price').text(),
+          "productQuantity" : $('.qua').val(),
+          "productLinePrice": $('.product-line-price').text(),
+          "cartsubtotal" : $('#cart-subtotal').text(),
+          "carttax" : $('#cart-tax').text(),
+          "carttotal" : $('#cart-total').text()
+       }
+     }); 
+     TableData.shift();  // first row will be empty - so remove
+     return TableData;
+ }
+ 
+$('.checkout').on('click', function () {
+  var TableData;
+  TableData = JSON.stringify(storeTblValues());
+  alert(TableData);
+  $.ajax({
+      type: "POST",
+      url: "",
+      data: "pTableData=" + TableData,
+      success: function(msg){
+        console.log(msg)
+      }
+  });
+});
